@@ -70,6 +70,8 @@ Fetch a list of all users.
     }
   ]
   ```
+#### Screenshot:
+![Get request image](image.png)
 
 ### GET /users/:id
 
@@ -86,13 +88,16 @@ Fetch details of a specific user by their ID.
     "hobby": "Teaching"
   }
   ```
-  
+#### Screenshot:
+![user:id](image-1.png)
   **Error Response** (if user not found):
   ```json
   {
     "message": "User not found"
   }
   ```
+#### Screenshot:
+![Not found](image-2.png)
 
 ### POST /users
 
@@ -118,6 +123,8 @@ Add a new user to the list.
     "hobby": "Reading"
   }
   ```
+#### Screenshot:
+![Post request](image-3.png)
 
 ### PUT /users/:id
 
@@ -143,6 +150,8 @@ Update the details of an existing user.
     "hobby": "Writing"
   }
   ```
+#### Screenshot:
+![Put request](image-4.png)
 
 ### DELETE /users/:id
 
@@ -151,9 +160,11 @@ Delete a user by their ID.
 - **Method**: `DELETE`
 - **URL**: `/users/:id`
 - **Response**: `204 No Content`
+#### Screenshot:
+![Delete request](image-5.png)
 
 ## Middleware
-
+![logs](image-6.png)
 - **Logger Middleware**: Logs the details of each request (method, URL, status code, and duration).
   
 - **Validation Middleware**: Ensures that `id`, `firstName`, `lastName`, and `hobby` fields are provided when creating or updating a user. Returns a `400` status code if any required field is missing.
