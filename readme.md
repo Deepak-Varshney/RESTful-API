@@ -1,7 +1,3 @@
-Here’s a simple README file template for your project that includes all the necessary details:
-
----
-
 # User API - Node.js and Express
 
 A simple RESTful API to manage a list of users, built with Node.js and Express. This API supports CRUD operations (Create, Read, Update, Delete) for users and includes middleware for logging requests and validating inputs.
